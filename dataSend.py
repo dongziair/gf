@@ -23,6 +23,7 @@ def sendKafkaData(df):
         'bootstrap.servers': '172.16.14.16:9092',  # 替换为你的Kafka Broker地址
     }
 
+
     dataJson = df.to_dict(orient='records')
     topic = 'station_weather'
     producer = Producer(**conf)
