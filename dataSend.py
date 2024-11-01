@@ -24,6 +24,7 @@ def sendKafkaData(df):
     }
 
 
+
     dataJson = df.to_dict(orient='records')
     topic = 'station_weather'
     producer = Producer(**conf)
